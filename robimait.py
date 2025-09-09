@@ -31,12 +31,12 @@ def country_to_flag(country_name: str) -> str:
 # Configuration
 LOGIN_URL = "http://217.23.5.21/ints/signin"
 XHR_URL = "http://217.23.5.21/ints/agent/res/data_smscdr.php?fdate1=2025-09-08%2000:00:00&fdate2=2025-09-08%2023:59:59&frange=&fclient=&fnum=&fcli=&fgdate=&fgmonth=&fgrange=&fgclient=&fgnumber=&fgcli=&fg=0&sEcho=1&iColumns=9&sColumns=%2C%2C%2C%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=25&mDataProp_0=0&sSearch_0=&bRegex_0=false&bSearchable_0=true&bSortable_0=true&mDataProp_1=1&sSearch_1=&bRegex_1=false&bSearchable_1=true&bSortable_1=true&mDataProp_2=2&sSearch_2=&bRegex_2=false&bSearchable_2=true&bSortable_2=true&mDataProp_3=3&sSearch_3=&bRegex_3=false&bSearchable_3=true&bSortable_3=true&mDataProp_4=4&sSearch_4=&bRegex_4=false&bSearchable_4=true&bSortable_4=true&mDataProp_5=5&sSearch_5=&bRegex_5=false&bSearchable_5=true&bSortable_5=true&mDataProp_6=6&sSearch_6=&bRegex_6=false&bSearchable_6=true&bSortable_6=true&mDataProp_7=7&sSearch_7=&bRegex_7=false&bSearchable_7=true&bSortable_7=true&mDataProp_8=8&sSearch_8=&bRegex_8=false&bSearchable_8=true&bSortable_8=false&sSearch=&bRegex=false&iSortCol_0=0&sSortDir_0=desc&iSortingCols=1&_=1757348638167"
-USERNAME = os.getenv("USERNAME", "Vikas123")
-PASSWORD = os.getenv("PASSWORD", "Vikas123")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8435058741:AAFsd5srA-THvQ1tUb-qr3AoOaXjIvnpZH4")
-ADMIN_ID = 123456789  # apna Telegram numeric ID
-DEVELOPER_ID = "@Vxxwo"  # Replace with your Telegram ID
-CHANNEL_LINK = "https://t.me/DDXOTP" # Replace with your Telegram channel ID
+USERNAME = os.getenv("USERNAME")
+PASSWORD = os.getenv("PASSWORD")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = 7761576669  # apna Telegram numeric ID
+DEVELOPER_ID = "@hiden_25"  # Replace with your Telegram ID
+CHANNEL_LINK = "https://t.me/freeotpss" # Replace with your Telegram channel ID
 
 # Headers
 HEADERS = {
@@ -59,7 +59,7 @@ bot = telegram.Bot(token=BOT_TOKEN)
 session = requests.Session()
 seen = set()
 CHAT_IDS = set()
-CHAT_IDS.add("-1003032332172")
+CHAT_IDS.add("-1001926462756")
 otp_count = 0
 last_otp_time = "N/A"
 
@@ -117,8 +117,8 @@ async def send_telegram_message(time_, country, number, sender, message):
     f"<blockquote>📨 <b>Message:</b></blockquote>\n"
     f"<blockquote><code>{html.escape(message)}</code></blockquote>\n\n"
     "━━Be Active━━\n"
-    "<blockquote>⚡ Powered by\n<a href='https://t.me/vxxwo'>VASU</a> ✨</blockquote>\n\n"
-    "<blockquote>Designed By <a href='https://t.me/DDXOTP'>DDXOTP</a> 🔥</blockquote>"
+    "<blockquote>⚡ Powered by\n<a href='https://t.me/hiden_25'>VASU</a> ✨</blockquote>\n\n"
+    "<blockquote>Designed By <a href='https://t.me/freeotpss'>Free OTPs</a> 🔥</blockquote>"
 )
 
     keyboard = [
@@ -200,7 +200,7 @@ def fetch_otp_loop():
         time.sleep(2)
 # /start ka handler
 async def start_command(update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("✅ Bot is Active & Running! Contact If Any Problem @Vxxwo")
+    await update.message.reply_text("✅ Bot is Active & Running! Contact If Any Problem @hiden_25")
 
 # Add group command
 async def addgroup(update, context):
